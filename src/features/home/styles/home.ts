@@ -8,13 +8,17 @@ export const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'center',
   },
+  headerContainer: {
+    width,
+    justifyContent: 'space-between',
+  },
   header: {
     flexDirection: 'row',
     marginTop: '8%',
+    marginBottom: '4%',
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 20,
-    width,
   },
   title: {
     fontSize: 30,
@@ -26,6 +30,10 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     width: '30%',
+    justifyContent: 'space-between',
+  },
+  menu: {
+    flexDirection: 'row',
     justifyContent: 'space-between',
   },
 });
