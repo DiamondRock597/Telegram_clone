@@ -7,6 +7,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
+    paddingHorizontal: 20,
   },
   headerContainer: {
     width,
@@ -16,9 +17,10 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     marginTop: '8%',
     marginBottom: '4%',
+
     justifyContent: 'space-between',
-    alignItems: 'center',
     paddingHorizontal: 20,
+    alignItems: 'center',
   },
   title: {
     fontSize: 30,
@@ -36,4 +38,9 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
+  messagesContainer: {
+    width: '100%',
+    paddingVertical: 20,
+  },
+  scroll: {},
 });

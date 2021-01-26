@@ -3,6 +3,7 @@ import {View, Text} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 import Icons from 'react-native-vector-icons/FontAwesome5';
 import MenuIcon from 'react-native-vector-icons/MaterialIcons';
+
 import {MenuButton} from './MenuButton';
 import {Message} from './Message';
 
@@ -30,8 +31,16 @@ export const Home = () => (
         <MenuButton text="Read" />
       </ScrollView>
     </View>
-    <View>
+    <ScrollView
+      showsVerticalScrollIndicator={false}
+      style={styles.scroll}
+      contentContainerStyle={styles.messagesContainer}>
       <Message />
-    </View>
+      <Message />
+      <Message />
+      <Message />
+      <Message />
+      <Message />
+    </ScrollView>
   </View>
 );
