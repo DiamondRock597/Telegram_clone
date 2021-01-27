@@ -1,9 +1,10 @@
 import {Dimensions, StyleSheet} from 'react-native';
 
-const {width, height} = Dimensions.get('window');
+const {width} = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
   container: {
+    backgroundColor: '#FFFFFF',
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',

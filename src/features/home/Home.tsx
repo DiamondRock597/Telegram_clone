@@ -6,6 +6,7 @@ import MenuIcon from 'react-native-vector-icons/MaterialIcons';
 
 import {MenuButton} from './MenuButton';
 import {Message} from './Message';
+import {data} from './data';
 
 import {styles} from './styles/home';
 
@@ -35,12 +36,17 @@ export const Home = () => (
       showsVerticalScrollIndicator={false}
       style={styles.scroll}
       contentContainerStyle={styles.messagesContainer}>
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
+      {data.map((item) => (
+        <Message
+          image={item.image}
+          name={item.name}
+          message={item.message}
+          key={`String-${item.id}`}
+          numberMessage={item.numberMessage}
+          ignor={item.ignor}
+          time={item.time}
+        />
+      ))}
     </ScrollView>
   </View>
 );
